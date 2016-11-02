@@ -16,6 +16,11 @@
 |True   |True   |False |
 +-------+-------+------+
 
+    >>> xor(True, True)
+    False
+    >>> xor(True, False)
+    True
+
 """
 
 

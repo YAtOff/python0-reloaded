@@ -7,6 +7,14 @@
         - `a is equal to b`
 
     в зависимост от стойностите на `a` и `b`.
+
+
+    >>> compare(3, 2)
+    a is greater than b
+    >>> compare(1, 2)
+    a is less than b
+    >>> compare(1, 1)
+    a is equal to b
 """
 
 
