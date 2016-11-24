@@ -17,12 +17,12 @@ def warn_if_not_implemented(func):
 class TestTasks(unittest.TestCase):
 
     @warn_if_not_implemented
-    def test_compare(self):
-        from compare import compare
-        self.assertEqual(compare(2, 1), 'a is greater then b')
-        self.assertEqual(compare(1, 2), 'a is less than b')
-        self.assertEqual(compare(1, 1), 'a is equal to b')
-
+    def test_xor(self):
+        from xor import xor
+        self.assertEqual(xor(False, False), False)
+        self.assertEqual(xor(False, True), True)
+        self.assertEqual(xor(True, False), True)
+        self.assertEqual(xor(True, True), False)
 
 if __name__ == '__main__':
     unittest.main()
