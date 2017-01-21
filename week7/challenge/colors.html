@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Python0-reloaded : Repository of the Introduction to programming in Python course in TUES">
+
+    <style>
+      #colors {
+          width: 100%;
+          min-height: 40px;
+      }
+    </style>
+
+    <title>ASCII символи и цветове</title>
+  </head>
+  <body>
+    <div id="colors"></div>
+    <hr>
+    <h3>Полезно</h3>
+    <p><a href="http://www.advanced-ict.info/interactive/colours.html">Представяне на цветове в компютрите</a></p>
+    <p><a href="https://bg.wikipedia.org/wiki/ASCII">Представяне на символите в компютрите</a></p>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        var colors = [
+          '#736d61',
+          '#727467',
+          '#757979',
+          '#6f756d',
+          '#616465',
+          '#697474',
+          '#68656e',
+          '#657874',
+          '#6c6576',
+          '#656c69',
+          '#733939',
+          '#313131',
+          '#313030',
+          '#313031',
+        ];
+
+        var symbol,
+          i,
+          container = $('#colors');
+
+        for (i = 0; i < colors.length; ++i) {
+          symbol = $('<div/>', {
+            css:{
+                width: '40px',
+                height: '40px',
+                float: 'left',
+                'background-color': colors[i]
+            }
+          });
+          symbol.appendTo(container);
+        }
+      });
+    </script>
+  </body>
+</html>
