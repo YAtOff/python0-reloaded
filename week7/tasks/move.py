@@ -37,12 +37,11 @@ def travel(speed, distance):
         Ако искате да придвижите играча на разстояние 300 пиксела за 3 секунди,
         трябва да извикате `move` 3 пъти с аргумент 100.
     """
-    t = distance // speed
-    for i in range(t):
-        move(distance // t)
+    pass
     # Добавете вашия код тук
 
 
+# v = 10 пиксела/сек, t = 300 пиксела
 travel(10, 300)
 
 window.bye()
