@@ -1,5 +1,4 @@
-# Задача 0
-
+"""
 Крайната цел на това упражнение е да се реализира играта "Guess the number".
 Играта има следните правила:
 - програмата иска името на играча
@@ -36,3 +35,10 @@ Guess the number: 8
 You win!
 Do you want to play again? no
 ```
+"""
+
+from random import randint
+
+MIN_NUMBER = 1
+MAX_NUMBER = 10
+number = str(randint(MIN_NUMBER, MAX_NUMBER))
